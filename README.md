@@ -8,7 +8,19 @@ Installation
 ------------
 
 Use Composer for dependency management. For instructions how to install
-Composer, see https://getcomposer.org/download/
+Composer, see https://getcomposer.org/download/.
+
+Make sure to install Composer version 1.x as Composer version 2 dropped
+PEAR support.
+
+Hint:
+```sh
+php composer-setup.php --1
+```
+
+Then clone this repository and install the dependencies. If you are developing
+horde and using PHP 8, you need to set the flag `--ignore-platform-reqs`.
+
 
 ```sh
 git clone https://github.com/horde/git-tools.git horde-git-tools
